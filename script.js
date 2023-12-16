@@ -54,7 +54,7 @@ const loadingAnimation = () => {
         scroller: "body",
         start: "top 65%",
         end: "top 10%",
-        markers: true,
+        // markers: true,
         scrub: 5,
         once: true,
     }
