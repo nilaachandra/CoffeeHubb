@@ -1,0 +1,6 @@
+@media screen and (max-width: 600px) {
+    #page2 .elem{
+        height: 600px;
+        width: 450px;
+    }
+}

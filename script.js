@@ -17,8 +17,8 @@ const mouseHover = () => {
   });
   imgContainer.addEventListener("mousemove", function (e) {
     gsap.to(playBtn, {
-      left: e.x - 80,
-      top: e.y - 80,
+      left: e.x -40,
+      top: e.y -40
     });
   });
 };
@@ -40,6 +40,24 @@ const loadingAnimation = () => {
     scale: 0.9,
     delay: 1,
     duration: 0.9,
+  });
+  gsap.from("#page2 .elem img", {
+    y: 100,
+    opacity: 0,
+    scale: 0.9,
+    delay: 0.3,
+    duration: 0.8,
+    stagger: 0.3,
+
+    scrollTrigger:{
+        trigger: "#page2 .elem img",
+        scroller: "body",
+        start: "top 65%",
+        end: "top 10%",
+        markers: true,
+        scrub: 5,
+        once: true,
+    }
   });
 };
 loadingAnimation();
