@@ -57,9 +57,6 @@ const loadingAnimation = () => {
     delay: 0.3,
     duration: 0.8,
     stagger: 0.2,
-
-
-  
   //   scrollTrigger: {
   //     trigger: "#page2 .elem img",
   //     scroller: "body",
