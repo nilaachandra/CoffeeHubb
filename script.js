@@ -1,3 +1,11 @@
+
+//locomtive scroll
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector(['#main']),
+//   smooth: true
+// });
+
+
 const imgContainer = document.querySelector("#img-container");
 const playBtn = document.querySelector("#visit");
 
@@ -47,15 +55,14 @@ const loadingAnimation = () => {
     scale: 0.9,
     delay: 0.3,
     duration: 0.8,
-    stagger: 0.3,
-
+    stagger: 0.2,
     scrollTrigger:{
         trigger: "#page2 .elem img",
         scroller: "body",
-        start: "top 65%",
-        end: "top 10%",
-        // markers: true,
+        start: "top 70%",
+        end: "top 15%",
         scrub: 5,
+        markers: true,
         once: true,
     }
   });
