@@ -1,10 +1,11 @@
 
 //locomtive scroll
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector(['#main']),
-//   smooth: true
-// });
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#main'),
+  smooth: true
+});
 
+gsap.registerPlugin(ScrollTrigger);
 
 const imgContainer = document.querySelector("#img-container");
 const playBtn = document.querySelector("#visit");
@@ -46,8 +47,8 @@ const loadingAnimation = () => {
     y: 100,
     opacity: 0,
     scale: 0.9,
-    delay: 1,
-    duration: 0.9,
+    delay: 0.3,
+    duration: 0.8,
   });
   gsap.from("#page2 .elem img", {
     y: 100,
@@ -56,15 +57,19 @@ const loadingAnimation = () => {
     delay: 0.3,
     duration: 0.8,
     stagger: 0.2,
-    scrollTrigger:{
-        trigger: "#page2 .elem img",
-        scroller: "body",
-        start: "top 70%",
-        end: "top 15%",
-        scrub: 5,
-        markers: true,
-        once: true,
-    }
+
+
+  
+  //   scrollTrigger: {
+  //     trigger: "#page2 .elem img",
+  //     scroller: "body",
+  //     start: "top 80%", 
+  //     end: "top 20%",  
+  //     scrub: 4,
+  //     markers: true,
+  //     once: true
+  // }  
+
   });
 };
 loadingAnimation();

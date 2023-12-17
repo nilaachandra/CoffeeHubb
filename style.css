@@ -25,6 +25,7 @@ html, body{
     font-size: 12vw;
     font-family: FuturaBold;
     text-transform: uppercase;
+    color: #2f1805;
     line-height: 14vw;
     letter-spacing: -4px;
 
@@ -33,7 +34,6 @@ html, body{
     height: 100vh;
     width: 100%;
     margin-top: 1vw;
-
 }
 #img-container img{
     height: 100%;
@@ -66,21 +66,25 @@ html, body{
     width: 100%;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 3vw 1vw;
     gap: 1vw;
 }
-#page2 .elem{
+#page2 .elem {
     height: 100%;
     width: 32%;
+    overflow: hidden;
+    flex: 1; /* Add this line */
 }
-#page2 .elem img{
+
+#page2 .elem img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transform: scale(1.2);
 }
+
 #page3{
     height: 100vh;
     width: 100%;
