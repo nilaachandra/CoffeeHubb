@@ -3,4 +3,9 @@
         height: 600px;
         width: 450px;
     }
+    #page1 h1{
+    font-size: 15vw;
+    font-family: Futura;
+    font-weight: bold;
+    }
 }
