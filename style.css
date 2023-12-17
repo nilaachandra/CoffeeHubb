@@ -75,7 +75,11 @@ html, body{
     height: 100%;
     width: 32%;
     overflow: hidden;
-    flex: 1; /* Add this line */
+    flex: 1; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #page2 .elem img {
@@ -84,9 +88,37 @@ html, body{
     object-fit: cover;
     transform: scale(1.2);
 }
-
+#page2 .elem .buts{
+    height: 50px;
+    width: 80%;
+    position: absolute;
+    z-index: 15;
+    background-color: peachpuff;
+    border-radius: 50px;
+}
+#page2 .elem .buts:hover{
+    height: 200px;
+}
 #page3{
-    height: 100vh;
+    min-height: 120vh;
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.child{
+    height: 54vh;
+    width: 38vw;
+    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
