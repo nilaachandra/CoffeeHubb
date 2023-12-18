@@ -14,6 +14,35 @@ html, body{
     width: 100%;
     scroll-behavior: smooth;
 }
+#nav{
+    width: 100%;
+    background-color: #BC9C7F;
+    position: fixed;
+    z-index: 99;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav #nav-mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#nav-mid #links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 450;
+    font-size: 14px;
+    margin-right: 32px;
+    text-transform: uppercase;
+}
+#nav-mid #icons i{
+    font-size: 18px;
+    margin-right: 48px;
+    font-weight: 100;
+}
 #page1{
     min-height: 100vh;
     position: relative;
@@ -122,3 +151,4 @@ html, body{
     width: 100%;
     object-fit: cover;
 }
+
