@@ -16,13 +16,22 @@ html, body{
 }
 #nav{
     width: 100%;
-    background-color: #BC9C7F;
     position: fixed;
     z-index: 99;
     padding: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#nav h1{
+    line-height: 32px;
+    font-weight: bold;
+    font-family: FuturaBold;
+}
+#nav-left{
+    display: block;
+    height: 64px;
+    overflow: hidden;
 }
 #nav #nav-mid{
     display: flex;
@@ -35,12 +44,20 @@ html, body{
     color: black;
     font-weight: 450;
     font-size: 14px;
-    margin-right: 32px;
+    margin: 0 20px;
     text-transform: uppercase;
+}
+#links{
+    padding: 10px;
+}
+#icons{
+    padding: 10px;
+    border-radius: 48px;
+    background-color: peachpuff;
 }
 #nav-mid #icons i{
     font-size: 18px;
-    margin-right: 48px;
+    margin: 0 20px;
     font-weight: 100;
 }
 #page1{
@@ -140,7 +157,6 @@ html, body{
 .child{
     height: 54vh;
     width: 38vw;
-    background-color: aquamarine;
     position: relative;
     display: flex;
     justify-content: center;
