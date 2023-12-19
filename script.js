@@ -34,24 +34,51 @@ locomotiveAnimations()
 
 
 //menu links
-const topNav = () => {
-  gsap.to("#nav-top",{
-    y:0,
-    duration: 0.8
-  })
+// Function to open the menu
+function openMenu() {
+  const menuOverlay = document.querySelector(".menu-overlay");
+
+  // Show the menu immediately without waiting for the animation to complete
+  menuOverlay.style.display = "block";
+  menuOverlay.style.pointerEvents = "all";
+
+  // Slide down animation when opening
+  gsap.fromTo(
+      menuOverlay,
+      { y: "-100%", opacity: 0 }, // Initial state
+      {
+          duration: 1,
+          y: "0%", // Slide down from the top
+          opacity: 1,
+          ease: "power2.out",
+      }
+  );
 }
-const menuIcon = document.getElementById('menuicon');
-const myMenu = document.getElementById('nav-top')
-menuIcon.addEventListener('click',function() {
-  topNav();
-})
-const closeIcon = document.getElementById('closeIcon');
-closeIcon.addEventListener('click', function(){
-  gsap.to("#nav-top",{
-    y: -800,
-    duration: 0.8,
-  })
-})
+
+// Function to close the menu
+function closeMenu() {
+  const menuOverlay = document.querySelector(".menu-overlay");
+
+  // Slide up animation when closing
+  gsap.to(menuOverlay, {
+      duration: 1,
+      y: "-100%",
+      ease: "power2.out",
+      onComplete: function () {
+          // Hide the menu after the animation completes
+          menuOverlay.style.display = "none";
+          menuOverlay.style.pointerEvents = "none";
+      },
+  });
+}
+
+// Event listener for the menu button
+document.querySelector("#menuicon").addEventListener("click", openMenu);
+
+// Event listener for the close button
+document.querySelector(".menu-close-btn").addEventListener("click", closeMenu);
+
+
 //nav bar animation
 const navbarAnimation = () =>{
   gsap.to("#nav-left h1",{

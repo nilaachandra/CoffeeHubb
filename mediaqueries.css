@@ -113,6 +113,21 @@
         object-fit: cover;
     }
     
-
+    @media (max-width: 600px) {
+        /* Adjust styles for small screens */
+        .menu-nav {
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center children horizontally */
+        }
+    
+        .menu-cols {
+            flex-direction: column; /* Stack children vertically on small screens */
+            align-items: center; /* Center children horizontally */
+        }
+    
+        .menu-link a {
+            font-size: 30px;
+        }
+    }
 
 }
