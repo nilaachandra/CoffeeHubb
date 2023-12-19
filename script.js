@@ -36,21 +36,19 @@ locomotiveAnimations()
 //menu links
 const topNav = () => {
   gsap.to("#nav-top",{
-    x: -425,
+    y:0,
     duration: 0.8
   })
 }
-
 const menuIcon = document.getElementById('menuicon');
 const myMenu = document.getElementById('nav-top')
 menuIcon.addEventListener('click',function() {
-  myMenu.classList.add('reveal');
   topNav();
 })
 const closeIcon = document.getElementById('closeIcon');
 closeIcon.addEventListener('click', function(){
   gsap.to("#nav-top",{
-    x: 0,
+    y: -800,
     duration: 0.8,
   })
 })
