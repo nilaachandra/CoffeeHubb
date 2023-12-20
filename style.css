@@ -170,6 +170,38 @@ html, body{
     padding: 3vw 1vw;
     gap: 1vw;
 }
+#main-desc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2vh;
+    min-height: 20vw; /* Changed height to min-height for better responsiveness */
+    padding: 0 1vw;
+}
+
+#left-desc {
+    width: 48%; /* Adjusted width to allow for margins and prevent potential overflow */
+    }
+
+#left-desc h2 {
+    font-size: 3vw;
+    font-family: FuturaBold;
+    text-transform: uppercase;
+    color: #2f1805;
+    line-height: 4vw;
+    letter-spacing: -1px; /* Adjusted letter-spacing for better readability */
+    text-align: center;
+}
+
+#right-desc {
+    width: 48%; /* Adjusted width to allow for margins and prevent potential overflow */
+}
+
+#right-desc p {
+    font-size: 20px;
+    text-align: center;
+}
 #page2 .elem {
     height: 100%;
     width: 32%;

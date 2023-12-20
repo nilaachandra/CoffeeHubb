@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
-    #nav{
+    #nav {
         width: 100%;
         position: fixed;
         z-index: 99;
@@ -8,23 +8,27 @@
         align-items: center;
         justify-content: space-between;
     }
-    #nav h1{
+
+    #nav h1 {
         line-height: 32px;
         font-weight: bold;
         font-family: FuturaBold;
     }
-    #nav-left{
+
+    #nav-left {
         display: block;
         height: 60px;
         overflow: hidden;
     }
-    #nav #nav-mid{
+
+    #nav #nav-mid {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 40px;
     }
-    #nav-mid #links a{
+
+    #nav-mid #links a {
         text-decoration: none;
         color: black;
         font-weight: 450;
@@ -33,13 +37,16 @@
         text-transform: uppercase;
         display: none;
     }
-    #links{
+
+    #links {
         padding: 10px;
     }
-    #icons{
+
+    #icons {
         padding: 10px;
     }
-    #nav-mid #icons i{
+
+    #nav-mid #icons i {
         font-size: 18px;
         margin: 0 20px;
         font-weight: 100;
@@ -48,24 +55,26 @@
 
 
 
-    #page1{
+    #page1 {
         min-height: 70vh;
         width: 100%;
         padding: 0 3vw;
-        padding-top: 18vh;;
+        padding-top: 18vh;
+        ;
     }
 
-    #page1 h1{
-    font-size: 14vw;
-    letter-spacing: -4px;
+    #page1 h1 {
+        font-size: 14vw;
+        letter-spacing: -4px;
     }
 
-    #img-container{
+    #img-container {
         height: 25vh;
         width: 100%;
         margin-top: 3vw;
     }
-    #page2{
+
+    #page2 {
         min-height: 100vh;
         width: 100%;
         position: relative;
@@ -76,20 +85,22 @@
         padding: 5vw 3vw;
         gap: 1vw;
     }
-    #page2 .elem{
+
+    #page2 .elem {
         height: 100vh;
         width: 100%;
         overflow: hidden;
         margin-bottom: 3vw;
     }
-    #page2 .elem img{
+
+    #page2 .elem img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         scale: 1.2;
     }
 
-    #page3{
+    #page3 {
         min-height: 120vh;
         width: 100%;
         position: relative;
@@ -98,7 +109,8 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .child{
+
+    .child {
         height: 50vh;
         width: 88vw;
         padding: 15vw;
@@ -107,27 +119,56 @@
         justify-content: center;
         align-items: center;
     }
-    .child img{
+
+    .child img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    
-    @media (max-width: 600px) {
-        /* Adjust styles for small screens */
-        .menu-nav {
-            flex-direction: column; /* Stack children vertically */
-            align-items: center; /* Center children horizontally */
-        }
-    
-        .menu-cols {
-            flex-direction: column; /* Stack children vertically on small screens */
-            align-items: center; /* Center children horizontally */
-        }
-    
-        .menu-link a {
-            font-size: 30px;
-        }
+
+
+    /* Adjust styles for small screens */
+    .menu-nav {
+        flex-direction: column;
+        /* Stack children vertically */
+        align-items: center;
+        /* Center children horizontally */
     }
+
+    .menu-cols {
+        flex-direction: column;
+        /* Stack children vertically on small screens */
+        align-items: center;
+        /* Center children horizontally */
+    }
+
+    .menu-link a {
+        font-size: 30px;
+    }
+
+
+    #main-desc {
+        min-height: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+    }
+    #right-desc{
+        gap: 2rem;
+    }
+    #left-desc,
+    #right-desc {
+        width: 100%;
+    }
+
+    #left-desc h2 {
+        font-size: 6vw;
+        line-height: 7vw;
+        height: auto;
+    }
+
+
 
 }
