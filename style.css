@@ -183,6 +183,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 2vw;
   margin-bottom: 2vh;
   min-height: 20vw;
   padding: 0 1vw;
