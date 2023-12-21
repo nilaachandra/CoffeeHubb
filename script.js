@@ -41,7 +41,6 @@ function openMenu() {
   // Show the menu immediately without waiting for the animation to complete
   menuOverlay.style.display = "block";
   menuOverlay.style.pointerEvents = "all";
-
   // Slide down animation when opening
   gsap.fromTo(
       menuOverlay,
