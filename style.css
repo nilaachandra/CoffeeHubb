@@ -1,289 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Assistant&family=Ephesis&family=Kalnia&family=Martel+Sans&family=Poppins&family=Raleway:wght@400;800&family=Saira+Extra+Condensed&family=Space+Grotesk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Assistant&family=Ephesis&family=Kalnia&family=Martel+Sans&family=Poppins&family=Raleway:wght@400;800&family=Saira+Extra+Condensed&family=Space+Grotesk&display=swap");
 @font-face {
-    font-family: FuturaBold;
-    src: url(./Futura-Bold.ttf);
+  font-family: FuturaBold;
+  src: url(./Futura-Bold.ttf);
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins','Raleway';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Raleway";
 }
-html, body{
-    height: 100%;
-    width: 100%;
-    scroll-behavior: smooth;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 .menu-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: peachpuff;
-    display: none;
-    z-index: 9999;
-    flex-direction: column; /* Align children vertically */
-    align-items: center; /* Center children horizontally */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: peachpuff;
+  display: none;
+  z-index: 9999;
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .menu-close-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .menu-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1em;
-    padding: 1em;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
 }
 
 .menu-cols {
-    display: flex;
-    flex-direction: column; /* Stack children vertically on small screens */
-    align-items: center; /* Center children horizontally */
-    padding: 1em;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  padding: 1em;
 }
 
 .menu-cols > div {
-    flex: 1;
-    padding: 1em 0;
+  flex: 1;
+  padding: 1em 0;
 }
 
 .menu-link {
-    position: relative;
-    width: max-content;
+  position: relative;
+  width: max-content;
 }
 
 .menu-link a {
-    font-size: 40px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-
-
-
-#nav{
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#nav {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#nav h1{
-    line-height: 32px;
-    font-weight: bold;
-    font-family: FuturaBold;
+#nav h1 {
+  line-height: 32px;
+  font-weight: bold;
+  font-family: FuturaBold;
 }
-#nav-left{
-    display: block;
-    height: 64px;
-    overflow: hidden;
+#nav-left {
+  display: block;
+  height: 64px;
+  overflow: hidden;
 }
-#nav #nav-mid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+#nav #nav-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
-#nav-mid #links a{
-    text-decoration: none;
-    color: black;
-    font-weight: 450;
-    font-size: 14px;
-    margin: 0 20px;
-    text-transform: uppercase;
+#nav-mid #links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 450;
+  font-size: 14px;
+  margin: 0 20px;
+  text-transform: uppercase;
 }
-#links{
-    padding: 10px;
+#links {
+  padding: 10px;
 }
-#icons{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#icons {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#nav-mid #icons i{
-    font-size: 18px;
-    margin: 0 10px;
-    font-weight: 100;
+#nav-mid #icons i {
+  font-size: 18px;
+  margin: 0 10px;
+  font-weight: 100;
 }
-#page1{
-    min-height: 100vh;
-    position: relative;
-    width: 100%;
-    padding: 0 1vw;
-    padding-top: 16vh;
+#page1 {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  padding: 0 1vw;
+  padding-top: 16vh;
 }
-#page1 h1{
-    font-size: 12vw;
-    font-family: FuturaBold;
-    text-transform: uppercase;
-    color: #2f1805;
-    line-height: 14vw;
-    letter-spacing: -4px;
-
+#page1 h1 {
+  font-size: 12vw;
+  font-family: FuturaBold;
+  text-transform: uppercase;
+  color: #2f1805;
+  line-height: 14vw;
+  letter-spacing: -4px;
 }
-#img-container{
-    height: 100vh;
-    width: 100%;
-    margin-top: 1vw;
+#img-container {
+  height: 100vh;
+  width: 100%;
+  margin-top: 1vw;
 }
-#img-container img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
+#img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
 }
-#img-container #visit{
-    padding: 3vw 2vw;
-    background-color: black;
-    color: white;
-    font-size: 2vw;
-    position: fixed;
-    text-transform: uppercase;
-    font-family: futura;
-    border-radius: 50%;    
-    opacity: 0;
-    scale: 0;
-    z-index: 15;
+#img-container #visit {
+  padding: 3vw 2vw;
+  background-color: black;
+  color: white;
+  font-size: 2vw;
+  position: fixed;
+  text-transform: uppercase;
+  font-family: futura;
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0;
+  z-index: 15;
 }
 
-#img-container #visit a{
-    color: white;
-    font-size: 1vw;
-    text-decoration: none;
-    text-align: center;
+#img-container #visit a {
+  color: white;
+  font-size: 1vw;
+  text-decoration: none;
+  text-align: center;
 }
-#page2{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1vw;
-    gap: 1vw;
+#page2 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+  gap: 1vw;
 }
-#gallery{
-    margin-top: 3vw;
-    height: 5vw;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#gallery {
+  margin-top: 3vw;
+  height: 5vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#gallery h1{
-    font-family: FuturaBold;
+#gallery h1 {
+  font-family: FuturaBold;
 }
 #main-desc {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 2vh;
-    min-height: 20vw; /* Changed height to min-height for better responsiveness */
-    padding: 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2vh;
+  min-height: 20vw;
+  padding: 0 1vw;
 }
 
 #left-desc {
-    width: 48%; /* Adjusted width to allow for margins and prevent potential overflow */
-    }
+  width: 48%;
+}
 
 #left-desc h2 {
-    font-size: 3vw;
-    font-family: FuturaBold;
-    text-transform: uppercase;
-    color: #2f1805;
-    line-height: 4vw;
-    letter-spacing: -1px; /* Adjusted letter-spacing for better readability */
-    text-align: center;
+  font-size: 3vw;
+  font-family: FuturaBold;
+  text-transform: uppercase;
+  color: #2f1805;
+  line-height: 4vw;
+  letter-spacing: -1px;
+  text-align: center;
 }
 
 #right-desc {
-    width: 48%; /* Adjusted width to allow for margins and prevent potential overflow */
+  width: 48%;
 }
 
 #right-desc p {
-    font-size: 20px;
-    text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
 #page2 .elem {
-    height: 100%;
-    width: 32%;
-    overflow: hidden;
-    flex: 1; 
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 32%;
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #page2 .elem img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transform: scale(1.2);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
 }
-#page2 .elem .buts{
-    height: 50px;
-    width: 80%;
-    position: absolute;
-    z-index: 15;
-    background-color: peachpuff;
-    border-radius: 50px;
+#page2 .elem .buts {
+  height: 50px;
+  width: 80%;
+  position: absolute;
+  z-index: 15;
+  background-color: peachpuff;
+  border-radius: 50px;
 }
-#page2 .elem .buts:hover{
-    height: 200px;
+#page2 .elem .buts:hover {
+  height: 200px;
 }
-#page3{
-    min-height: 120vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+#page3 {
+  min-height: 120vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
-#page3 #menu{
-    font-family: FuturaBold;
-    margin-bottom: 3vw;
+#page3 #menu {
+  font-family: FuturaBold;
+  margin-bottom: 3vw;
 }
-#child-container{
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+#child-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.child{
-    height: 54vh;
-    width: 38vw;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 0 5vw 0;
-    padding: 2vw;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.child img{
-    height: 80%;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-#page3 a{
-    color: black;
-    text-decoration: none;
-    font-size: 2vw;
+.child {
+  height: 54vh;
+  width: 38vw;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 5vw 0;
+  padding: 2vw;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
+.child img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#page3 a {
+  color: black;
+  text-decoration: none;
+  font-size: 2vw;
+}
