@@ -15,6 +15,7 @@ body {
   width: 100%;
   scroll-behavior: smooth;
 }
+
 .menu-overlay {
   position: absolute;
   top: 0;
