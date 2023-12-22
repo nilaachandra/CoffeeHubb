@@ -183,8 +183,8 @@ const loadingAnimation = () => {
     y: 100,
     opacity: 0,
     scale: 0.9,
-    delay: 0.3,
-    duration: 0.8,
+    delay: 0.2,
+    duration: 0.7,
     stagger: 0.2,
     scrollTrigger: {
         trigger: "#page3",
