@@ -286,3 +286,9 @@ body {
   text-decoration: none;
   font-size: 2vw;
 }
+#page4 {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  padding: 0 1vw;
+}

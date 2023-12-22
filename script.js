@@ -86,8 +86,8 @@ const navbarAnimation = () =>{
       trigger:"#page1",
       scroller: "#main",
       start: "top 0",
-      end: "top -5%",
-      scrub: 2,
+      end: "top -6%",
+      scrub: 3,
     }
   })
   gsap.to("#nav-mid #links a",{
@@ -162,6 +162,38 @@ const loadingAnimation = () => {
     scrub: 4,
     once: true
   }  
+  });
+  gsap.from("#main-desc #left-desc,#main-desc #right-desc",{
+    y: 100,
+    opacity: 0,
+    scale: 0.9,
+    delay: 0.3,
+    duration: 0.8,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: "#main-desc",
+        scroller: "#main",
+        start: "top 60%", 
+        end: "top 40%",  
+        scrub: 4,
+        once: true
+      }
+  });
+  gsap.from("#page3 .child",{
+    y: 100,
+    opacity: 0,
+    scale: 0.9,
+    delay: 0.3,
+    duration: 0.8,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: "#page3",
+        scroller: "#main",
+        start: "top 60%", 
+        end: "bottom 20%",  
+        scrub: 4,
+        once: true
+      }
   });
 };
 loadingAnimation();
