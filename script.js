@@ -1,7 +1,7 @@
-
+gsap.registerPlugin(ScrollTrigger);
 //locomotive and scrollTrigger
 const locomotiveAnimations = () => {
-  gsap.registerPlugin(ScrollTrigger);
+
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
@@ -154,14 +154,14 @@ const loadingAnimation = () => {
     delay: 0.3,
     duration: 0.8,
     stagger: 0.2,
-  //   // scrollTrigger: {
-  //   //   trigger: "#page2 .elem img",
-  //   //   scroller: "body",
-  //   //   start: "top 80%", 
-  //   //   end: "top 20%",  
-  //   //   scrub: 4,
-  //   //   once: true
-  // }  
+ scrollTrigger: {
+    trigger: "#page2 .elem img",
+    scroller: "#main",
+    start: "top 80%", 
+    end: "top 20%",  
+    scrub: 4,
+    once: true
+  }  
   });
 };
 loadingAnimation();
