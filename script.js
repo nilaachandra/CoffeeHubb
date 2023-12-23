@@ -163,7 +163,7 @@ const loadingAnimation = () => {
     once: true
   }  
   });
-  gsap.from("#main-desc #left-desc,#main-desc #right-desc",{
+  gsap.from("#main-desc #left-desc,#main-desc #right-desc p",{
     y: 100,
     opacity: 0,
     scale: 0.9,
