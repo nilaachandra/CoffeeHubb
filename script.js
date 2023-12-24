@@ -221,7 +221,6 @@ const loadingAnimation = () => {
       end: "bottom 60%",  
       scrub: 4,
       once: true,
-      markers :true,
     }
   });
 };
