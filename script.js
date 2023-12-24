@@ -129,7 +129,21 @@ const mouseHover = () => {
   });
 };
 mouseHover();
-
+//swiper js
+const swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    
+  },
+  grabCursor: true,
+});
 //loading animation
 const loadingAnimation = () => {
   gsap.from("#page1 h1", {
@@ -194,6 +208,21 @@ const loadingAnimation = () => {
         scrub: 4,
         once: true
       }
+  });
+  gsap.from(".swiper h1, .swiper h3", {
+    y: 100,
+    opacity: 0,
+    delay: 0.5,
+    duration: 0.9,
+    scrollTrigger: {
+      trigger: ".swiper",
+      scroller: "#main",
+      start: "top 60%", 
+      end: "bottom 60%",  
+      scrub: 4,
+      once: true,
+      markers :true,
+    }
   });
 };
 loadingAnimation();

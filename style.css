@@ -285,8 +285,40 @@ body {
   font-size: 1.5vw;
 }
 #page4 {
-  min-height: 100vh;
   position: relative;
   width: 100%;
+  min-height:120vh;
   padding: 0 1vw;
+}
+#reviews{
+  width: 100%;
+  padding: 0 1vw;
+
+}
+.swiper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.swiper-slide h1{
+  font-family: FuturaBold;
+  font-size: 3vw;
+}
+.swiper-slide h3{
+  font-family: FuturaBold;
+  font-size: 2vw;
+}
+.swiper-pagination-bullet{
+  background-color: black;
 }

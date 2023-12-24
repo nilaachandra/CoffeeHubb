@@ -155,4 +155,7 @@
     line-height: 7vw;
     height: auto;
   }
+  .swiper-slide {
+    height: 25vh;
+  }
 }
