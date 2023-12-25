@@ -12,7 +12,7 @@
     <a href="https://github.com/nilaachandra/CoffeeHubb"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/nilaachandra/CoffeeHubb">View Demo</a>
+    <a href="https://coffeehubb.vercel.app">View Demo</a>
     .
     <a href="https://github.com/nilaachandra/CoffeeHubb/issues">Report Bug</a>
     .
