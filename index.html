@@ -191,14 +191,53 @@
         </div>
         <button>Send Your own Revies</button>
       </div>
-
-
     </div>
+    <div id="footer">
+      <h1 class="footer-logo">CoffeeHubb</h1>
+      <div id="footer-container">
+        <div id="leftcon">
+          <h1>Connect With Us</h1>
+          <div class="socials">
+            <a href="#">Facebook <i class="ri-facebook-circle-fill"></i></a>
+            <a href="#">Instagram <i class="ri-instagram-fill"></i></a>
+            <a href="#">Twitter <i class="ri-twitter-fill"></i></a>
+          </div>
+        </div>
+        <div class="quick-links">
+          <a href="#">Home</a>
+          <a href="#">Gallery</a>
+          <a href="#">Menus</a>
+          <a href="#">Reviews</a>
+        </div>
+        <div id="rightcon">
+          <form class="rightcon-tainer" id="form">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <label for="fullName">Your Name</label>
+            <input type="text" id="fullName" name="fullName">
+            <input type="submit" id="button" value="Send" >         
+           </form>
+        </div>
+      </div>
+      <div class="disclaimer">
+        <p>Disclaimer: The images on this website are sourced from third-party websites and are for illustrative,
+          fictional, and project-based purposes for educational learning. We make no claims regarding the origin or
+          ownership of these images. This website is project-based, created to showcase skills, and is not intended for
+          any commercial purpose.</p>
+      </div>
+      <div id="credits">Made with &#9829; &#169;Nilaa | 2023</div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('LBis-P0LfIhPaa8-3')
+    </script>
     <script src="script.js"></script>
 </body>
 

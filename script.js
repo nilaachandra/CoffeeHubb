@@ -134,7 +134,7 @@ const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -223,8 +223,42 @@ const loadingAnimation = () => {
       once: true,
     }
   });
+  gsap.from("#leftcon, #rightcon,.quick-links, .disclaimer, .credits ", {
+    y: 250,
+    opacity: 0,
+    delay: 0.7,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#page4",
+      scroller: "#main",
+      start: "top 60%", 
+      end: "bottom 60%",  
+      scrub: 4,
+      once: true,
+    }
+  });
 };
 loadingAnimation();
 
-//
+//emailjs
+const sendBtn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   sendBtn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_l6f1y1f';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      sendBtn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      sendBtn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
 

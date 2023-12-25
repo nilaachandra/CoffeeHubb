@@ -287,7 +287,6 @@ body {
 #page4 {
   position: relative;
   width: 100%;
-  min-height:120vh;
   padding: 0 1vw;
 }
 #reviews{
@@ -335,4 +334,106 @@ body {
 #reviews button:hover{
   background-color: #dfd5c9;
 
+}
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3vh;
+  background-color: #2f1805;
+  color: white;
+  flex-direction: column;
+}
+
+.footer-logo{
+  font-family: FuturaBold;
+  color: white;
+
+}
+#footer #footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+#leftcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 30%;
+}
+#leftcon h1{
+  font-family: FuturaBold;
+  text-transform: uppercase;
+  color: white;
+
+}
+#leftcon .socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+}
+.socials a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.socials a i{
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 2rem;
+}
+#rightcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 30%;
+
+}
+.rightcon-tainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.rightcon-tainer input{
+  margin-bottom: 1vw;
+}
+.rightcon-tainer label{
+  margin: 1vh 0;
+}
+.rightcon-tainer button{
+  height: 2rem;
+  background-color: peachpuff;
+  outline: none;
+}
+.quick-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+.quick-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+.disclaimer{
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1vw;
+  margin-top: 1vw;
 }
