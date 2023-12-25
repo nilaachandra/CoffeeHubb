@@ -1,7 +1,6 @@
 <br/>
 <p align="center">
   <a href="https://github.com/nilaachandra/CoffeeHubb">
-    <img src="" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">CoffeeHubb</h3>
@@ -178,7 +177,7 @@ I would like to express my gratitude to the following individuals and communitie
 
 ## Special Thanks
 
-Special thanks to [Your Name] for [specific contributions or guidance]. Your support has been invaluable in shaping and improving this project.
+Special thanks to Sheryians Coding School on YouTube for their tutorials through which I was able to make such website. Your support has been invaluable in shaping and improving this project.
 
 ## Contact
 
