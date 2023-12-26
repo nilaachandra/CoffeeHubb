@@ -344,6 +344,7 @@ body {
   background-color: #2f1805;
   color: white;
   flex-direction: column;
+  padding: 2vw;
 }
 
 .footer-logo{
