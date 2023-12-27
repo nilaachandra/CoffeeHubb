@@ -81,7 +81,7 @@ To run this project locally, follow these steps:
 Ensure you have a stable internet connection.
 Copy and paste the following CDN links into your HTML file as needed.
 GSAP (GreenSock Animation Platform):
-https://unpkg.com/gsap@3.9.1/dist/gsap.min.js
+[https://unpkg.com/gsap@3.9.1/dist/gsap.min.js](https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js)
 
 Swiper JS:
 href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -171,7 +171,10 @@ I would like to express my gratitude to the following individuals and communitie
 
 - **Pinterest:**
   Inspiration drawn from the Pinterest community, shaping the design and layout elements of this project.
-
+  
+- **Twitter/X Web Dev Community:**
+  Inspiration drawn from the community on X, also the immense support I received throughout the building of this project publicly.
+  
 - **Open Source Community:**
   A nod to the broader open-source community for fostering a collaborative environment that encourages learning and growth.
 
